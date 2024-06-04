@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Stripe Payment</title>
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <form id="payment-form">
+      <div class="form-row">
+        <label for="card-element">Credit or Debit Card:</label>
+        <div id="card-element"><!-- Stripe’s Card Element will go here --></div>
+        <div id="card-errors" role="alert"></div>
+      </div>
+      <button type="submit">Submit Payment</button>
+    </form>
+    <div id="payment-result"><!-- Display the result here --></div>
+  </body>
+</html>

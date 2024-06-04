@@ -1,0 +1,53 @@
+{
+  "resource": "/user/{userId}",
+  "path": "/user/12345",
+  "httpMethod": "GET",
+  "headers": {
+    "Accept": "*/*",
+    "Host": "your-api-id.execute-api.region.amazonaws.com",
+    "User-Agent": "YourUserAgentString",
+    "X-Amzn-Trace-Id": "Root=1-23456789-abcdef0123456789abcdef0"
+  },
+  "multiValueHeaders": {
+    "Accept": ["*/*"],
+    "User-Agent": ["YourUserAgentString"]
+  },
+  "queryStringParameters": null,
+  "multiValueQueryStringParameters": null,
+  "pathParameters": {
+    "userId": "1"
+  },
+  "stageVariables": null,
+  "requestContext": {
+    "resourceId": "abcd12",
+    "resourcePath": "/user/{userId}",
+    "httpMethod": "GET",
+    "extendedRequestId": "abcdef123456",
+    "requestTime": "01/Feb/2024:12:34:56 +0000",
+    "path": "/dev/user/12345",
+    "accountId": "123456789012",
+    "protocol": "HTTP/1.1",
+    "stage": "dev",
+    "domainPrefix": "your-api-id",
+    "requestTimeEpoch": 1580557496123,
+    "requestId": "abcdefgh-1234-5678-abcd-1234567890ab",
+    "identity": {
+      "cognitoIdentityPoolId": "7",
+      "accountId": null,
+      "cognitoIdentityId": null,
+      "caller": null,
+      "sourceIp": "123.123.123.123",
+      "principalOrgId": null,
+      "accessKey": null,
+      "cognitoAuthenticationType": null,
+      "cognitoAuthenticationProvider": null,
+      "userArn": null,
+      "userAgent": "YourUserAgentString",
+      "user": null
+    },
+    "domainName": "your-api-id.execute-api.region.amazonaws.com",
+    "apiId": "your-api-id"
+  },
+  "body": "{\"Amount\": 20000, \"Currency\": \"usd\", \"PaymentMethodID\": \"pm_1PFPstHPfdwb9DagEk3yrS3M\"}",
+  "isBase64Encoded": false
+}
